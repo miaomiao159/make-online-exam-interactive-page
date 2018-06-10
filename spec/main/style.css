@@ -1,0 +1,18 @@
+body {
+    margin: 100px 80px 100px;
+}
+#examname
+{
+    font-size: 50px;
+}
+#examinfo
+{
+    margin-right: 45px;
+}
+#examinfo1
+{
+    margin-right: 112px;
+}
+textarea{
+   margin-left: 14px;
+}
