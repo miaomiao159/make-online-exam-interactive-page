@@ -1,4 +1,5 @@
 function buttonclick() {
+
     var sum = 0;
     var first01value = document.getElementById("first01");
     if (first01value.value == "统一建模语言") {
@@ -12,19 +13,18 @@ function buttonclick() {
     a.push(first02value.value);
     a.push(first03value.value);
     a.push(first04value.value);
-    a.sort();
-    var res = true;
-    if (a[0] != '多态性') {
-        res = false;
+    if(a.includes("继承性"))
+    {
+        sum+=5;
     }
-    if (a[1] != '封装性') {
-        res = false;
+    if(a.includes("多态性"))
+    {
+        sum+=5;
     }
-    if (a[2] != '继承性') {
-        res = false;
-    }
-    if (res == true) {
-        sum += 15;
+
+    if(a.indexOf("封装性")!=-1)
+    {
+        sum+=5;
     }
 
     var second01value = document.getElementsByName("s1");
